@@ -278,3 +278,27 @@ h2 {
 .about-nav-overlay a:hover {
   outline: 1px dashed red;
 }
+
+
+.about-nav-overlay {
+  position: absolute;
+  top: 28px;        
+  right: 120px;     
+
+  display: flex;
+  gap: 80px;
+
+  font-family: Poppins, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #1d2939;
+  z-index: 10;
+}
+
+.about-nav-overlay a {
+  text-decoration: none;
+  color: #1d2939;
+}
+.about-image-container {
+  position: relative;
+}
