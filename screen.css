@@ -1,11 +1,11 @@
-/* ========== RESET ========== */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ========== VARIABLES ========== */
+
 :root {
   --navy: #082b5f;
   --blue: #0E4A98;
@@ -17,7 +17,7 @@
   --green-soft: #e6f4ea;
 }
 
-/* ========== BASE ========== */
+
 body {
   font-family: "Poppins", Arial, sans-serif;
   background: var(--bg);
@@ -25,7 +25,7 @@ body {
   line-height: 1.5;
 }
 
-/* ========== NAVIGATION ========== */
+
 .top-nav {
   height: 100px;
   padding: 0 48px;
@@ -60,7 +60,7 @@ nav a {
   font-size: 16px;
 }
 
-/* ========== PAGE WRAPPER ========== */
+
 .page {
   min-height: calc(100vh - 100px);
   display: flex;
@@ -69,7 +69,7 @@ nav a {
   padding: 40px 20px;
 }
 
-/* ========== CARD (SUCCESS / CENTER CONTENT) ========== */
+
 .card {
   width: 100%;
   max-width: 720px;
@@ -81,14 +81,14 @@ nav a {
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-/* ========== LOGO (CENTER) ========== */
+
 .logo-img.large {
   width: 140px;
   height: 140px;
   margin: 0 auto 20px;
 }
 
-/* ========== TYPOGRAPHY ========== */
+
 h1 {
   font-size: 36px;
   font-weight: 600;
@@ -112,7 +112,7 @@ h2 {
   margin-bottom: 32px;
 }
 
-/* ========== SUCCESS ICON ========== */
+
 .success-icon {
   width: 120px;
   height: 120px;
@@ -142,7 +142,7 @@ h2 {
   font-size: 20px;
 }
 
-/* ========== BUTTONS ========== */
+
 .primary-btn {
   display: inline-block;
   padding: 14px 28px;
@@ -158,7 +158,7 @@ h2 {
   background: var(--blue);
 }
 
-/* ========== ABOUT PAGE ========== */
+
 .about-page {
   padding: 40px;
   background: #79B3E0;
@@ -211,7 +211,7 @@ h2 {
   font-size: 15px;
 }
 
-/* ========== RESPONSIVE ========== */
+
 @media (max-width: 768px) {
   .top-nav {
     padding: 0 20px;
@@ -228,4 +228,53 @@ h2 {
   h1 {
     font-size: 28px;
   }
+}
+
+
+.about-png-page {
+  margin: 0;
+  background: #79B3E0; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+
+.about-image-container {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.about-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+
+.about-nav-overlay {
+  position: absolute;
+  top: 70px;   
+  right: 120px;
+
+  display: flex;
+  gap: 48px;
+
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+}
+
+
+.about-nav-overlay a {
+  text-decoration: none;
+  color: transparent;  
+  position: relative;
+}
+
+
+.about-nav-overlay a:hover {
+  outline: 1px dashed red;
 }
